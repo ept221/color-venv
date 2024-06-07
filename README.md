@@ -1,6 +1,9 @@
 # color-venv
 A snippet for .zshrc to add colored zsh prompt prefix for Python venv
 
+![prompt](prompt.png)
+
+
 ```zsh
 autoload -U colors && colors
 

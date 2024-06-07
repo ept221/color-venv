@@ -7,7 +7,6 @@ autoload -U colors && colors
 export DEFAULT_PROMPT=$PS1
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1s
-source .venv/bin/activate
 precmd() {
     if [ -n "${VIRTUAL_ENV:-}" ] ; then
         export PS1="%B%{$fg[green]%}($(basename $VIRTUAL_ENV))%{$reset_color%}%b $DEFAULT_PROMPT"
